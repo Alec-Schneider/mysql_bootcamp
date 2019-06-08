@@ -1,0 +1,13 @@
+TIMESTAMPS
+==========
+
+CREATE TABLE comments (
+content VARCHAR(100),
+created_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE TABLE comments (
+content VARCHAR(100),
+created_at TIMESTAMP DEFAULT NOW() ON UPDATE CURRENT_TIMESTAMP
+);
+
